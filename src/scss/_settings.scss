@@ -10,7 +10,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Open Sans;
   background-color: var(--color-white);
 }
 
@@ -60,11 +60,48 @@ ul {
 }
 
 .container {
+  max-width: 1260px;
   margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1200px;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
 }
+
+@media (min-width: 767px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1023px) {
+  .container {
+    padding: 0 40px;
+    flex-direction: row;
+
+  }
+}
+
+
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
+}
+
+
+//typography
+
+.title {
+  font-family: Epilogue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 23px;
+}
+
+.text {
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
 }
