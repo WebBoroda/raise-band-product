@@ -1,0 +1,13 @@
+node_modules/
+.DS_Store
+Thumbs.db
+README.md
+package-lock.json
+.editorconfig
+.stylelintrc
+.idea
+*.sublime*
+*.log
+*.ai
+*.psd
+*.pdf

@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'Epilogue', sans-serif;
+  src: local('../fonts/Century Gothic'), local('Epilogue-Regular'),
+    url('../fonts/CenturyGothic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Epilogue', sans-serif;
+  src: local('../fonts/Century Gothic Bold'), local('Epilogue-Bold'),
+    url('../fonts/CenturyGothic-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  src: local('../fonts/Century Gothic'), local('OpenSans-Regular'),
+    url('../fonts/CenturyGothic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  src: local('../fonts/Century Gothic Bold'), local('OpenSans-Bold'),
+    url('../fonts/CenturyGothic-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'icons';
+  src:
+    url('../fonts/icons.woff?yf1rxj') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"]::before,
+[class*=" _icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-note:before {
+  content: "\e909";
+}
+
+._icon-instagram:before {
+  content: "\e900";
+}
+
+._icon-master:before {
+  content: "\e901";
+}
+
+._icon-visa:before {
+  content: "\e902";
+}
+
+._icon-facebook:before {
+  content: "\e903";
+}
+
+._icon-mob-vibration:before {
+  content: "\e904";
+}
+
+._icon-pinterest:before {
+  content: "\e905";
+}
+
+._icon-search:before {
+  content: "\e906";
+}
+
+._icon-star:before {
+  content: "\e907";
+}
+
+._icon-youtube:before {
+  content: "\e908";
+}

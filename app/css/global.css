@@ -1,0 +1,175 @@
+:root {
+  --color-white: #FFFFFF;
+  --color-primary: #C774EE;
+  --color-bg: #F9FAFC;
+  --color-add: #FEE5FF;
+  --color-text-blue-dark: #111563;
+  --color-text-blue-light: #286DBD;
+  --color-text-button-light: #63718E;
+  --color-text-main: #3A3A3A;
+  --color-text-add-light: #BAD9E7;
+  --color-shadow-success: #C774EE;
+  --color-shadow-primary: #FFFFFF; }
+
+@font-face {
+  font-family: 'Epilogue', sans-serif;
+  src: local("../fonts/Century Gothic"), local("Epilogue-Regular"), url("../fonts/CenturyGothic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Epilogue', sans-serif;
+  src: local("../fonts/Century Gothic Bold"), local("Epilogue-Bold"), url("../fonts/CenturyGothic-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  src: local("../fonts/Century Gothic"), local("OpenSans-Regular"), url("../fonts/CenturyGothic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  src: local("../fonts/Century Gothic Bold"), local("OpenSans-Bold"), url("../fonts/CenturyGothic-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'icons';
+  src: url("../fonts/icons.woff?yf1rxj") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; }
+
+[class^="_icon-"]::before,
+[class*=" _icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+._icon-note:before {
+  content: "\e909"; }
+
+._icon-instagram:before {
+  content: "\e900"; }
+
+._icon-master:before {
+  content: "\e901"; }
+
+._icon-visa:before {
+  content: "\e902"; }
+
+._icon-facebook:before {
+  content: "\e903"; }
+
+._icon-mob-vibration:before {
+  content: "\e904"; }
+
+._icon-pinterest:before {
+  content: "\e905"; }
+
+._icon-search:before {
+  content: "\e906"; }
+
+._icon-star:before {
+  content: "\e907"; }
+
+._icon-youtube:before {
+  content: "\e908"; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--color-white); }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+.is-outer {
+  position: relative !important;
+  left: -9999px !important; }
+
+.site-container {
+  overflow: hidden; }
+
+.is-hidden {
+  display: none !important; }
+
+.for-mobile {
+  display: none; }
+  @media (max-width: 768px) {
+    .for-mobile {
+      display: block; } }
+
+.error {
+  border: 2px #ff4019 solid !important; }
+
+.btn-reset {
+  border: none;
+  background: transparent;
+  cursor: pointer; }
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px; }
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none; }
+
+.button__maine {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 150%;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  padding: 6px 21px;
+  border-radius: 10px;
+  transition: all .5s ease; }
+
+.button__secondary {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 150%;
+  padding: 4px 22px;
+  color: var(--color-text-button-light);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-text-button-light);
+  border-radius: 10px;
+  transition: all .5s ease; }
+
+.button__maine:hover {
+  box-shadow: 0px 5px 10px rgba(76, 174, 80, 0.3);
+  transition: all .5s ease; }
+
+.button__secondary:hover {
+  color: var(--color-shadow-success);
+  border: 2px solid var(--color-shadow-success);
+  transition: all .5s ease; }
+
+/*# sourceMappingURL=global.css.map */
