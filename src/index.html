@@ -15,22 +15,26 @@
 	<div class="site-container">
 		@include('partials/header.html')
 
-    <section class="section imac">
-      <div class="container">
+    <section class="section ">
+      <div class="container imac">
         <div class="info">
           <h1 class="title imac__title">At vero eos et accusamus et iusto odio dignissimos ducimus</h1>
           <div class="imac__text">
             <p>Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. </p>
           </div>
-          <a href="#" class="button button__maine imac__btn btn-reset"  target="_blank">Try for free</a>
+          <a href="#popup" class="popup-link button button__maine imac__btn btn-reset" >Try for free</a>
         </div>
         <img src="img/iMac.png" alt="iMac/png" class="imac__img">
       </div>
     </section>
 
 
+
     @include('partials/footer.html')
+
   </div>
+
+  @include('partials/popup.html')
   <script src="js/vendor.js"></script>
 	<script src="js/main.js"></script>
 </body>

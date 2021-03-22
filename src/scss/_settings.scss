@@ -88,6 +88,10 @@ ul {
 }
 
 
+.lock {
+  overflow: hidden;
+}
+
 //typography
 
 .title {
@@ -96,6 +100,7 @@ ul {
   font-weight: bold;
   font-size: 22px;
   line-height: 23px;
+  color: var(--color-text-blue-dark);
 }
 
 .text {
