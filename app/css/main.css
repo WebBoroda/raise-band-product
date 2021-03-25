@@ -667,7 +667,8 @@
   color: var(--color-text-blue-dark);
   width: 88px;
   border: none;
-  background-color: transparent; }
+  background-color: transparent;
+  pointer-events: none; }
 
 .price__input {
   text-align: center;
