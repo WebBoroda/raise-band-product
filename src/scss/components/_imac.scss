@@ -1,52 +1,79 @@
 .imac {
   padding-top: 50px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+}
+
+
 
 .imac__title {
   padding-bottom: 20px;
-  margin: 0; }
+  margin: 0;
+}
 
 .imac__text {
-  padding-bottom: 30px; }
-  .imac__text p {
+  padding-bottom: 30px;
+
+  p {
     padding: 0;
     margin: 0;
     font-size: 18px;
-    line-height: 150%; }
+    line-height: 150%;
+  }
+}
 
 .imac__btn {
   font-size: 20px;
   line-height: 100%;
-  padding: 16.5px 93px; }
+  padding: 16.5px 93px;
+}
 
 @media (min-width: 600px) {
+
   .imac {
-    padding-top: 85px; }
+    padding-top: 85px;
+  }
+
   .imac__title {
     font-size: 42px;
     line-height: 120%;
-    padding-right: 200px; }
+    padding-right: 200px;
+  }
+
   .imac__btn {
     width: 280px;
-    padding: 16.5px 83.5px; } }
+    padding: 16.5px 83.5px;
+  }
+
+
+}
 
 @media (min-width: 1023px) {
+
   .imac {
     padding-top: 198px;
-    position: relative; }
+    position: relative;
+  }
+
   .info {
     width: 500px;
     height: auto;
-    padding-right: 20px; }
+    padding-right: 20px;
+
+  }
+
   .imac__title {
-    padding-right: 0; }
+    padding-right: 0;
+  }
+
   .imac__btn {
     width: 280px;
-    padding: 16.5px 83.5px; }
+    padding: 16.5px 83.5px;
+  }
+
   .imac__img {
     position: absolute;
     z-index: -1;
     top: 72px;
-    left: 435px; } }
-
-/*# sourceMappingURL=section__imac.css.map */
+    left: 543px;
+  }
+}

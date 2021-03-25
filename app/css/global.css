@@ -6,12 +6,13 @@
   --color-add: #FEE5FF;
   --color-text-blue-dark: #111563;
   --color-text-blue-light: #286DBD;
-  --color-text-button-light: #63718E;
+  --color-text-light: #63718E;
   --color-text-main: #3A3A3A;
   --color-text-add-light: #BAD9E7;
   --color-shadow-success: #C774EE;
   --color-shadow-primary: rgba(32, 108, 164, 0.16);
-  --color-shadov-input: #052953; }
+  --color-shadow-main: rgba(91, 167, 202, 0.15);
+  --color-shadow-input: rgba(5, 41, 83, 0.14); }
 
 @font-face {
   font-family: 'Epilogue', sans-serif;
@@ -39,7 +40,7 @@
 
 @font-face {
   font-family: 'icons';
-  src: url("../fonts/icons.woff?yf1rxj") format("woff");
+  src: url("../fonts/icons.woff?1uo7bk") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block; }
@@ -57,6 +58,10 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+._icon-calendar:before {
+  content: "\e90a";
+  color: #111563; }
 
 ._icon-note:before {
   content: "\e909"; }
@@ -137,7 +142,7 @@ ul {
   cursor: pointer; }
 
 .container {
-  max-width: 1260px;
+  max-width: 1180px;
   margin: 0 auto;
   padding: 0 10px;
   display: flex;
@@ -148,6 +153,8 @@ ul {
     padding: 0 40px; } }
 
 @media (min-width: 1023px) {
+  section {
+    margin-bottom: 115px; }
   .container {
     padding: 0 40px;
     flex-direction: row; } }
@@ -172,33 +179,11 @@ ul {
   font-size: 18px;
   line-height: 150%; }
 
-.button {
-  display: block;
-  text-align: center;
-  font-size: 15px;
-  font-weight: bold;
-  line-height: 150%;
-  border-radius: 10px;
-  transition: all .5s ease; }
-
-.button__maine {
-  color: var(--color-white);
-  background-color: var(--color-primary);
-  padding: 6px 21px; }
-
-.button__secondary {
-  padding: 4px 22px;
-  color: var(--color-text-button-light);
-  background-color: var(--color-white);
-  border: 2px solid var(--color-text-button-light); }
-
-.button__maine:hover {
-  box-shadow: 0px 5px 10px rgba(76, 174, 80, 0.3);
-  transition: all .5s ease; }
-
-.button__secondary:hover {
-  color: var(--color-shadow-success);
-  border: 2px solid var(--color-shadow-success);
-  transition: all .5s ease; }
+p {
+  margin: 0;
+  padding: 0;
+  color: var(--color-text-light);
+  font-size: 16px;
+  line-height: 150%; }
 
 /*# sourceMappingURL=global.css.map */
