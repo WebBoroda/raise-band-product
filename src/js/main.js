@@ -218,4 +218,42 @@ const picker = datepicker('.datepicker__element', {
 
 
 
+// get object calculator
+
+let inpColor = document.querySelector('#color');
+let inpSize = document.querySelector('#size');
+let inpNumber = document.querySelector('#amount');
+let inpDate = document.querySelector('.datepicker__element')
+let inpCity = document.querySelector('#city');
+let inpDelivery = document.querySelector('#delivery');
+let buttonCalc = document.querySelector('.form__button');
+let inpPrice = document.querySelector('.price__input');
+let formCalc = document.querySelector('.calc__form');
+
+let dataFormCalc = {};
+
+buttonCalc.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  dataFormCalc.color = inpColor.value;
+  dataFormCalc.size = inpSize.value;
+  dataFormCalc.numder = inpNumber.value;
+  dataFormCalc.date = inpDate.value;
+  dataFormCalc.city = inpCity.value;
+  dataFormCalc.delivery = inpDelivery.value;
+
+  console.log(dataFormCalc);
+
+  // formCalc.reset();
+
+  inpPrice.value = "$" + 76.55;
+
+});
+
+
+// End object calculator
+
+
+
+
 
