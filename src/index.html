@@ -76,7 +76,7 @@
 				</p>
 				<form action="#" method="post" class="calc__form">
 					<div class="form__select">
-						<select name="color" id="" class="form__input" aria-placeholder="color">
+						<select id="color" class="form__input" aria-placeholder="color">
 							<option disabled selected value="colors" hidden>Colors</option>
 							<option value="red">- red</option>
 							<option value="green">- green</option>
@@ -116,7 +116,7 @@
 					</div>
 
 					<div class="form__select form__delivery">
-						<select name="delivery" id="" class="form__input" aria-placeholder="delivery">
+						<select id="delivery" class="form__input" aria-placeholder="delivery">
 							<option disabled selected value="Delivery" hidden>Delivery</option>
 							<option value="New Post">New Post</option>
 							<option value="Urkposhta">Urkposhta</option>
@@ -125,7 +125,7 @@
 						</select>
 					</div>
 
-					<input class="price__input" type="text" name="" value="$00.00">
+					<input class="price__input" type="text" readonly value="$00.00">
 
 					<button class="form__button" type="submit">Proceed</button>
 
@@ -138,8 +138,6 @@
 	</div>
 
 	@include('partials/popup.html')
-
-	<!-- <script src="https://unpkg.com/js-datepicker@5.16.0/dist/datepicker.min.js"></script> -->
 
 	<script src="js/vendor.js"></script>
 	<script src="js/main.js"></script>
